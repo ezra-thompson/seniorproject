@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Experiment Overview</title>
+  <!-- OPTIONAL: Link to Google Fonts for a cool typeface -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* ------------------ RESET ------------------ */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* ------------------ BODY ------------------ */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #eef2f3 0%, #8e9eab 100%);
+      color: #333;
+    }
+
+    /* ------------------ MAIN WRAPPER ------------------ */
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 40px auto;
+    }
+
+    /* ------------------ SECTION HEADER ------------------ */
+    .section-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .section-header h2 {
+      font-size: 2em;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .section-header p {
+      color: #444;
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    /* ------------------ CARD GRID ------------------ */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+    }
+
+    .card-img {
+      width: 100%;
+      height: 180px;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+      flex-grow: 1;
+    }
+
+    .card-content h3 {
+      font-size: 1.3em;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    .card-content p {
+      line-height: 1.6;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    /* ------------------ TEXT CONTENT SECTION ------------------ */
+    .text-section {
+      background: #fff;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      padding: 30px;
+      border-radius: 8px;
+      margin-bottom: 40px;
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    .text-section p {
+      margin-bottom: 15px;
+      line-height: 1.6;
+    }
+
+    .text-section ul {
+      margin: 15px 0 15px 20px;
+      list-style-type: disc;
+    }
+
+    .text-section ul li {
+      margin: 8px 0;
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* ------------------ FOOTER ------------------ */
+    footer {
+      text-align: center;
+      color: #fff;
+      padding: 20px 0;
+      background: rgba(0, 0, 0, 0.7);
+      margin-top: 40px;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 0.9em;
+    }
+
+    /* Media Queries */
+    @media (max-width: 768px) {
+      .container {
+        width: 95%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Main Container -->
+<div class="container">
+
+  <!-- Section: Intro Text -->
+  <div class="text-section">
+    <p>
+      After contextualizing the history of artificial intelligence and learning what tends to work in terms of human interaction, I felt ready to get to work on conducting my experiment. First, I had to figure out the social media platform I would be using. I had three choices in mind:
+    </p>
+    <ul>
+      <li>Instagram (image generation)</li>
+      <li>Twitter/X (can write witty tweets and the sorts, as well as reply to popular tweets)</li>
+      <li>Reddit (essentially functions like a 2000s forum - simple, and possibilities are endless)</li>
+    </ul>
+    <p>
+      Ultimately, I decided to go with Reddit, as I felt that its relatively simple format and chances of visibility were far higher than the other two. Two of the accounts already had a pretty simple method set into place (human account - run completely by me, human/AI account - I design prompts for ChatGPT and it writes the content) - however, I had yet to discover a way to fully automate an account all by itself.
+    </p>
+  </div>
+
+  <!-- Section: Card Grid of Platforms or Tools (Optional Example) -->
+  <div class="section-header">
+    <h2>Choosing a Platform</h2>
+    <p>Here are the three platforms I considered, visually showcased:</p>
+  </div>
+  <div class="card-grid">
+    <!-- Instagram Card -->
+    <div class="card">
+      <div class="card-img" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/2048px-Instagram_logo_2022.svg.png');"></div>
+      <div class="card-content">
+        <h3>Instagram</h3>
+      </div>
+    </div>
+    <!-- Twitter/X Card -->
+    <div class="card">
+      <div class="card-img" style="background-image: url('https://cdn.prod.website-files.com/5d66bdc65e51a0d114d15891/64cebc6c19c2fe31de94c78e_X-vector-logo-download.png');"></div>
+      <div class="card-content">
+        <h3>Twitter/X</h3>
+      </div>
+    </div>
+    <!-- Reddit Card -->
+    <div class="card">
+      <div class="card-img" style="background-image: url('https://redditinc.com/hs-fs/hubfs/Reddit%20Inc/Brand/Reddit_Logo.png');"></div>
+      <div class="card-content">
+        <h3>Reddit</h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section: Tools or Services -->
+  <div class="section-header">
+    <h2>Automation Tools</h2>
+    <p>The AI-focused news site, Zapier, presented the following programs as potential ways to fully automate social media accounts:
+    </p>
+  </div>
+  <div class="card-grid">
+    <!-- Invideo AI -->
+    <div class="card">
+      <div class="card-img" style="background-image: url('https://play-lh.googleusercontent.com/AmApygv-n4TkCmx8CE5AhzlsFFeY59-dAyFjoDo05MRzMb1UvBmuBvYMKApm1y5xQKc');"></div>
+      <div class="card-content">
+        <h3>Invideo AI</h3>
+        <p>fully automated AI company that will not only create AI videos for you, but also post on social media and engage with your audience</p>
+      </div>
+    </div>
+    <!-- Flick -->
+    <div class="card">
+      <div class="card-img" style="background-image: url('https://www.toolpilot.ai/cdn/shop/files/ed73ba7e5fbb9ae288aec00e70c4af61.jpg?v=1695195329');"></div>
+      <div class="card-content">
+        <h3>Flick</h3>
+        <p>can generate scripts, but most fascinatingly, can analyze your social media page and its interactions to find out what connects with your audience and generate content based on that</p>
+      </div>
+    </div>
+    <!-- ContentStudio -->
+    <div class="card">
+      <div class="card-img" style="background-image: url('https://www.fahimai.com/wp-content/uploads/2024/09/CTA-67.png');"></div>
+      <div class="card-content">
+        <h3>ContentStudio</h3>
+        <p> similar to Flick in that it generates scripts, but also self-publishes and doesn’t seem to need any human intervention</p>
+      </div>
+    </div>
+    <!-- predis.ai -->
+    <div class="card">
+      <div class="card-img" style="background-image: url('https://play-lh.googleusercontent.com/tirqLlnfGmVpk70TksYf5XyfCZhIsRlob-hsOnPgAXxcJ0aSHNGtNv5Zp_wr7techYe3=w240-h480-rw');"></div>
+      <div class="card-content">
+        <h3>predis.ai</h3>
+        <p>basically the complete social media tool, can create memes, AI generated text, advertisements, videos, and more</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section: Final Note -->
+  <div class="text-section" style="margin-top: 40px;">
+    <p>
+      Yet, as incredible as many of these tools were, none of them seemed catered specifically to what I was trying to do. Until, an artificial intelligence expert named Wes Frank, known online as “WesGPT”, came with the solution to the problem - YourAIAgent, a cheap service that accomplishes my precise goal - to make a fully automated Reddit account. With all the tools necessary to conduct the experiment successfully gathered, it was ready to go.
+    </p>
+  </div>
+
+  <!-- NEW TEXT SECTION: Additional Content -->
+  <div class="text-section" style="margin-top: 40px;">
+    <p>
+      Over the course of a day, the accounts created various different posts and comments. On the human account, I tended to lean towards shorter, easy to read content in popular subreddits (ex. What are some good Minecraft servers in 2025?). On the Human-AI account, the artificial intelligence tended to take ideas and make them large, expansive posts (Ex. Predicting the next 25 NBA Champions). Finally, the AI account seemed to stray away from posts entirely and focus entirely on comments, most of which ironically seemed to fit the Rogerian model that ALICE did (ex. “It's alarming to see that the IRS anticipates a $500 billion revenue shortfall due to taxpayers opting out of filing in light of recent DOGE cuts. This not only jeopardizes essential public services but also places a heavier burden on compliant taxpayers. While some might view this as a form of protest, it's crucial to remember that failing to file taxes can lead to severe penalties, including fines and interest.” in an article about IRS $500B revenue shortfall).
+    </p>
+    <p>
+      The accounts were let to linger for a week in order to gain traction, and collected and compared their total interactions.
+    </p>
+
+
+    <img src="https://i.ibb.co/60XYbB9S/data.png" alt="data" border="0">
+
+    <p>
+      The graph displayed here shows the three accounts and the amount of karma (a Reddit term for the amount of upvotes/downvotes one has gotten) the accounts have obtained. Interestingly, the amount of karma gathered consistently went down by use of artificial intelligence, with the fully AI run account accumulating negative karma, meaning that the vast majority of its comments were downvoted. Interactions with the content also varied drastically by account - interactions with the human account were very standard and leveled, interactions with the human-AI account ranged from admiration to accusation of AI usage, and interactions with the AI account were few and far between, and almost all negative. </p>
+    <p> Overall, while artificial intelligence certainly poses more of a threat than ever before, it seems that for now, artificial intelligence is unable to truly connect with a social media base independently of human influence. However, with artificial intelligence technology progressing more and more each day, it might not be long before it learns how to properly interact with people on social media. </p>
+  </div>
