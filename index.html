@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Turing to Maturing</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: "Roboto", sans-serif;
+            line-height: 1.6;
+            color: #fff;
+            background: #000; /* Black background */
+            margin: 0;
+            padding: 0;
+            text-align: center; /* Center align all text content */
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@400;500;600&display=swap');
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: url('https://s.yimg.com/ny/api/res/1.2/yyPynmlcGjuqN7VVnEUNpA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD01MDM-/https://o.aolcdn.com/hss/storage/midas/110555ae23b5595872f68b7cc394ca6/205752499/Blade+Runner+2049-1.jpg') center/cover no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Dim the overlay */
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            text-transform: uppercase;
+            font-family: "Poppins", sans-serif;
+            color: white;
+            z-index: 2;
+            position: relative;
+        }
+
+        .hero p {
+            font-size: 1.6rem;
+            margin-top: 10px;
+            color: white;
+            z-index: 2;
+            position: relative;
+        }
+
+        /* Article Section */
+        .article-section {
+            padding: 50px;
+            text-align: justify; /* Align block text justify for clean paragraph alignment */
+        }
+
+        .article-section div {
+            margin-bottom: 50px;
+        }
+
+        .article-section h2 {
+            font-size: 2.5rem;
+            color: #9B5DE5; /* Neon purple */
+            margin-bottom: 15px;
+        }
+
+        .article-section p {
+            font-size: 1.2rem;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        /* Center images and ensure natural aspect ratio */
+        .article-section img {
+            display: block;
+            margin: auto; /* Center the image */
+            max-width: 80%; /* Scale down large images */
+            height: auto; /* Maintain natural aspect ratio */
+            border-radius: 8px;
+            border: 3px solid #C77DFF; /* Neon image border */
+            box-shadow: 0 4px 15px rgba(199, 125, 255, 0.3); /* Add softer shadow */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .article-section img:hover {
+            transform: scale(1.05); /* Slight zoom on hover */
+            box-shadow: 0 8px 30px rgba(199, 125, 255, 0.6);
+        }
+
+        /* List */
+        .article-section ul {
+            list-style: none; /* Remove default bullet points */
+            padding: 0;
+        }
+
+        .article-section ul li {
+            font-size: 1rem;
+            color: #C77DFF;
+            background: rgba(155, 93, 229, 0.2); /* Subtle purple backdrop */
+            padding: 5px 10px;
+            margin: 5px auto;
+            display: inline-block; /* Evenly spaced inline items */
+            border-radius: 5px;
+        }
+
+        /* Button */
+        .next-page-btn-container {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .next-page-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: white;
+            background-color: #9B5DE5; /* Neon button */
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            box-shadow: 2px 4px 10px rgba(155, 93, 229, 0.5); /* Neon button glow */
+            transition: all 0.3s ease;
+        }
+
+        .next-page-btn:hover {
+            transform: translateY(-3px);
+            background-color: #C77DFF;
+            box-shadow: 2px 5px 20px rgba(199, 125, 255, 0.7); /* Stronger hover glow */
+        }
+    </style>
+</head>
+<body>
+<!-- Hero Section -->
+<div class="hero">
+    <h1>From Turing to Maturing: The AI Conundrum</h1>
+    <p>By Ezra Thompson</p>
+</div>
+
+<!-- Article Section -->
+<section class="article-section">
+    <div>
+        <p>
+            In 1982, when the film <em>Blade Runner</em> presented the idea of artificial intelligence being able to connect with the core principles of humanity and exist of its own doing, it was seen as nothing but a work of fiction.
+            However, in 2025, not only can artificial intelligence build real connections with its users, with over 400 million people using artificial intelligence model ChatGPT per week, but also, it can affect real world industries.
+            As of March 2025, a total of 14 Hollywood level films have used artificial intelligence to assist in the development of the film in some way.
+        </p>
+        <img src="https://infografolio.com/cdn/shop/files/artificial-intelligence-slides-slides-how-is-ai-used-artificial-intelligence-infographic-template-powerpoint-template-keynote-template-google-slides-template-infographic-template-3619.jpg?v=1691331252" alt="AI in Movies">
+        <p>
+            However, the most pressing concern regarding artificial intelligence is its impacts on the larger internet — in particular, social media. One of the main areas of concern is known as the “dead internet theory”.
+            According to Jake Renzella and Vlada Rozova, two professors at The University of New South Wales, “The dead internet theory essentially claims that activity and content on the internet, including social media accounts,
+            are predominantly being created and automated by artificial intelligence agents.”
+        </p>
+        <p>
+            While the merits of this theory are still relatively unproven, research done by Renzella and Rozova suggests that the largely outlandish theory has more evidence than ever before.
+            They report that in 2022, the Kremlin dispersed 10,000 bots around the internet to spread anti-Ukraine propaganda, with more suspected to exist.
+        </p>
+    </div>
+
+    <div>
+        <p>
+            Still not convinced that bots are lurking the web, staying relatively undetected? Well, let’s take a look at a real world example:
+        </p>
+        <p>
+            <a href="https://www.facebook.com/creativeideas999/posts/made-it-with-my-own-hands-thanks-to-everyone-who-appreciates-this-%EF%B8%8Fusa-most-be-l/395652469881141/"
+               target="_blank">Creative Ideas - Made it with my own hands! 🦅😊</a>
+        </p>
+        <p>
+            Click the link, and you’ll find a very clearly AI-generated image of a young boy creating a cow out of Coca-Cola bottles, with a caption that states “Made it with my own hands!”
+            The clearly AI-generated content garnered 118,000 likes and 2,100 shares, making it a massive success.
+        </p>
+        <ul>
+            <li>“so creative mind i like it love you”</li>
+            <li>“Well done buddy. Great job.”</li>
+            <li>“You are really strong my little one, congratulations”</li>
+            <li>“This is unbelievable may God continue giving you more wisdom son”</li>
+            <li>“I love that you're so creative you can probably make a bunch of those and sell them hopefully somebody in United States to buy them from you”</li>
+        </ul>
+        <img src="https://scontent-bos5-1.xx.fbcdn.net/v/t39.30808-6/484076094_640844882028564_7816435997039089050_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=US3DAFQw0NEQ7kNvgGdP9su&_nc_oc=AdkZmCAjAFVv3AI049SaGEo5JnAPUBIpvg-VQpq5vK13hFy0Ji4wH381PQDXc1x02vg&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_gid=Oua_yWG5XDg0BKEzzAinYg&oh=00_AYF6eGiblutuGGtsX_JLUvRWG7xG9KjaiEUU-BjEIfcS4w&oe=67E3DAF8" alt="AI Facebook Post">
+        <p>
+            The list goes on and on. In a recent article by Forbes, "How Will AI Impact Social Media Content Creators?" the author actively admits "The advent of AI-driven content creation tools has democratized the content production process, making it more accessible and cost-effective for creators of all backgrounds. From image production using Midjourney, to voice reproduction using ElevenLabs, to video repurposing using Opus Clip, to languge dubbing using Papercup, AI-powered tools automate labor-intensive tasks and empower creators to produce a larger volume of high-quality content in less time." However, something irked me deeply about this social media success — to me, a post like this feels like an anomaly rather than a continued pattern of success for artificial intelligence on social media.
+            However, there’s only one way to figure this out for sure — if you can’t beat them, join them.
+        </p>
+        <p>
+            I decided to experiment with three different types of social media accounts — one entirely human run, one with collaboration between human and machine, and one entirely run by artificial intelligence.
+            But before we get into that, it’s important to understand the history behind artificial intelligence. So, let's take a journey through the ages.
+        </p>
+    </div>
+
+    <!-- Button -->
+    <div class="next-page-btn-container">
+        <a href="nostalgic_web_page.html">
+            <button class="next-page-btn">Next Page</button>
+        </a>
+    </div>
+</section>
+</body>
+</html>
