@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the 90's Web!</title>
+    <style>
+        /* General Body Styles */
+        body {
+            background: black; /* Base black background */
+            color: #00AAFF; /* Bright blue for text */
+            font-family: "Times New Roman", Times, serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
+            background-color: black; /* Subtle constellation texture */
+            background-size: cover; /* Cover the page fully */
+        }
+
+        /* Main Content Styles */
+        #content {
+            padding: 30px;
+            max-width: 800px;
+            margin: auto; /* Centers content */
+            background-color: rgba(0, 0, 0, 0.8); /* Slightly transparent to let constellations show through */
+            border: 2px dotted #00AAFF; /* Dotted retro border */
+            box-shadow: 0 0 20px #00AAFF; /* Soft glow for focus */
+        }
+
+        h1 {
+            color: #FFFFFF; /* White title for contrast */
+            text-align: center;
+            font-size: 36px;
+            text-shadow: 0px 0px 10px #00AAFF; /* Glowy blue 90's vibe */
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* Fun Fact Sidebar */
+        #fun-fact {
+            width: 220px;
+            background-color: #222222; /* Dark panel */
+            color: #FFFFFF;
+            padding: 15px;
+            border: 2px solid #00AAFF; /* Sharp blue border */
+            position: fixed; /* Stays in place while scrolling */
+            right: 20px;
+            top: 120px;
+            box-shadow: 0 0 15px #00AAFF; /* Glowing effect */
+        }
+
+        #fun-fact h2 {
+            font-size: 20px;
+            margin: 0;
+            text-align: center;
+            margin-bottom: 10px;
+            color: #00FFAA; /* Fun neon green title */
+            text-shadow: 0px 0px 5px #00FFAA;
+        }
+
+        #fun-fact p {
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        #big-image-section {
+            width: 300px;
+            background-color: #444444; /* Keeps the gray box styling */
+            border: 2px solid #00AAFF;
+            position: fixed;
+            left: 20px;
+            top: 120px;
+            text-align: center; /* Centers the image and text */
+            padding: 10px; /* Adds some spacing around the content */
+            box-shadow: 0 0 15px #00AAFF; /* Keeps the slight glow */
+        }
+
+        #big-image-section img {
+            width: 100%; /* Makes the image responsive within the box */
+            max-width: 280px; /* Prevents it from being too large */
+            height: auto; /* Maintains aspect ratio */
+            margin-bottom: 10px; /* Adds spacing between the image and text */
+            border: 1px solid #00AAFF; /* Adds a small border to the image */
+        }
+
+        #big-image-section p {
+            color: #FFFFFF; /* White text */
+            font-size: 14px; /* Smaller font size for the caption */
+            margin: 0; /* Removes extra margins */
+            text-shadow: 0px 0px 3px #000000; /* Subtle text shadow for readability */
+        }
+
+
+        .placeholder-img {
+            text-align: center; /* Center aligns the image */
+            margin: 20px 0; /* Keeps some spacing around the image */
+        }
+
+        .placeholder-img img {
+            width: 100%; /* Makes the image stretch to fit the container */
+            max-width: 600px; /* Prevents the image from becoming too large */
+            height: auto; /* Keeps the aspect ratio intact */
+            border: 2px solid #00AAFF; /* Matches the retro theme */
+        }
+
+        /* Retro Click Button */
+        .click-button {
+            display: block;
+            margin: 40px auto;
+            text-align: center;
+            padding: 10px 20px;
+            color: #FFFFFF;
+            background-color: #333333;
+            border: 2px solid #00AAFF;
+            text-decoration: none;
+            font-size: 18px;
+            font-family: "Courier New", Courier, monospace;
+            cursor: pointer;
+            box-shadow: 0px 0px 10px #00AAFF; /* Slight glow effect */
+        }
+
+        .click-button:hover {
+            background-color: #00AAFF;
+            color: black;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #00AAFF; /* Matches the theme */
+            border-top: 1px solid #00AAFF;
+            padding-top: 10px;
+        }
+
+        /* Subtle Glow Animation */
+        @keyframes glow {
+            0%, 100% {
+                text-shadow: 0 0 5px #00AAFF, 0 0 10px #00AAFF;
+            }
+            50% {
+                text-shadow: 0 0 15px #00AAFF, 0 0 20px #00AAFF;
+            }
+        }
+    </style>
+</head>
+<body>
+<!-- Main Content -->
+<div id="content">
+    <h1>The Story of ELIZA</h1>
+    <p>
+        The first real example of artificial intelligence was ELIZA, an artificial intelligence developed at MIT by artificial intelligence visionary Joseph Weizenbaum in 1967.
+        ELIZA’s main purpose was to provide therapy to users - the model used the Rogerian psychotherapy theory, which purported that traumas can be cured by repeating the
+        patient’s words back to them and making them reflect on their thoughts.
+    </p>
+    <div class="placeholder-img">
+        <img src="https://i.ytimg.com/vi/J9c7pTi0RqY/hqdefault.jpg" alt="ELIZA Conversation Screenshot">
+    </div>
+    <p>
+        Despite being developed in the 1960’s, ELIZA had unprecedented staying power, and was an extremely popular software up until the late 1990’s.
+        While the artificial intelligence was extremely barebones and rarely able to truly understand the inquiry at hand, ELIZA had successfully proven one thing - humanity was
+        willing to accept artificial intelligence as their digital peers.
+    </p>
+    <p>
+        For many years, there was very little actual development in artificial intelligence chatbots, with the vast majority of them being extremely similar to ELIZA. However,
+        this finally changed in 1997, when programmer Rollo Carpenter created the Jabberwacky chatbot...
+    </p>
+
+    <!-- Click to Move On Button -->
+    <a href="y2k.html" class="click-button">>> Click to Move On!</a>
+
+
+    <!-- Fun Fact Sidebar -->
+<div id="fun-fact">
+    <h2>Fun Fact:</h2>
+    <p>Despite over almost 50 years of separation, ELIZA and Apple's Siri voice assistant actually have extremely similar algorithms - apart from the voice recognition, Siri is only ever so slightly more complex.</p>
+</div>
+
+<!-- Big Image Section -->
+<div id="big-image-section">
+    <img src="https://groups.csail.mit.edu/medg/people/psz/LCS-75/Weizenbaum.jpg">
+    <p>Joseph Weizenbaum at MIT</p>
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>© 1995 - The Coolest Website on the Internet</p>
+</footer>
+</body>
+</html>
