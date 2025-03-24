@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jabberwacky & Cleverbot</title>
+  <style>
+    :root {
+      --bg-color: #DCE2BD; /* Light green */
+      --pg-color: #f9fcea; /* Very light green */
+      --accent: #93C0A4; /* Dark green */
+      --accent-2: #8E9B90; /* Gray */
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      font-family: sans-serif;
+      font-size: 1rem; /* Slightly larger text size */
+    }
+
+    body {
+      background-color: var(--bg-color);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    #container {
+      background-color: var(--pg-color);
+      max-width: 80%; /* Widen layout */
+      margin: 50px auto;
+      border-left: 100px solid var(--accent);
+      border-right: 1px solid var(--accent-2);
+      position: relative;
+      padding-bottom: 20px; /* Added spacing for the button */
+    }
+
+    #outer {
+      border-left: 4px dotted var(--accent-2);
+      margin-left: 100px;
+    }
+
+    article {
+      padding: 50px;
+      line-height: 1.8em;
+    }
+
+    article p {
+      margin-bottom: 20px; /* Add space between paragraphs */
+      text-align: justify;
+    }
+
+    article img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 20px 0; /* Add spacing around image */
+      border: 1px solid var(--accent-2);
+      border-radius: 5px; /* Slightly rounded corners for the image */
+    }
+
+    h2 {
+      font-size: 18px; /* Slightly larger size */
+      border-bottom: 1px solid var(--accent-2);
+      padding-bottom: 8px;
+    }
+
+    #next-page {
+      display: flex;
+      justify-content: center;
+      margin: 30px 0;
+    }
+
+    .next-button {
+      background: var(--accent);
+      color: white;
+      border: 1px solid var(--accent-2);
+      padding: 10px 30px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .next-button:hover {
+      background: var(--accent-2);
+    }
+
+    footer {
+      text-align: center;
+      margin: 20px 0;
+      color: var(--accent-2);
+      font-size: 14px;
+    }
+
+    @media only screen and (max-width: 850px) {
+      #container {
+        width: 100%;
+        margin-left: 0;
+      }
+
+      #outer {
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+<div id="outer">
+  <div id="container">
+    <article>
+      <header>
+        <h1>Jabberwacky & Cleverbot</h1>
+      </header>
+      <!-- Added Requested Image -->
+      <img src="https://www.cmswire.com/-/media/89a1eddd0e5a4f2f8938e06ea3f5eeaf.ashx" alt="AI Chatbot History Image">
+
+      <p>
+        For many years, there was very little actual development in artificial intelligence chatbots, with the vast
+        majority of them being extremely similar to ELIZA.
+      </p>
+
+      <p>
+        However, this finally changed in 1997, when programmer Rollo Carpenter created the Jabberwacky chatbot.
+        Unlike ELIZA, which kept a stern, therapist tone, Jabberwacky was intended for casual conversation - a peer
+        that one could converse with as if they were a friend.
+      </p>
+
+      <p>
+        Jabberwacky was presented on an internet page, and initially had very little conversational skills beyond
+        common pleasantries. However, Jabberwacky learned through human interaction, and took on the idea of an
+        ever-growing intelligence that gets closer and closer to sentience as it learns from the conversations it
+        has with humans.
+      </p>
+
+      <p>
+        Eventually, Jabberwacky transformed into <a href="https://www.cleverbot.com" target="_blank">Cleverbot</a>, a website that is still up to this day, and receives
+        thousands of users per day. While Jabberwacky/Cleverbot is now considered obsolete by current technological
+        standards, it is still a revolutionary concept that has data still being used to train artificial
+        intelligence models today.
+      </p>
+    </article>
+    <div id="next-page">
+      <a href="END.html" class="next-button">Next Page</a>
+    </div>
+  </div>
+</div>
+<footer>
+  &copy; 2000. All rights reserved.
+</footer>
+</body>
+</html>
